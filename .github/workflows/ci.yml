@@ -1,0 +1,23 @@
+name: tap-ci
+on:
+  push:
+  pull_request:
+
+# Public-repo, GitHub-hosted (free) — this tap is separate from the self-hosted clw CI.
+jobs:
+  formula:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # HARD gate: the formula must be syntactically valid Ruby. (We deliberately do
+      # NOT run `brew audit --strict` here — it rejects a closed/proprietary license
+      # stanza (`:cannot_represent`); the real end-to-end proof is a `brew install`
+      # from the public mirror in the clw release dry-run, not audit.)
+      - name: ruby syntax check
+        run: ruby -c Formula/clw.rb
+      # INFORMATIONAL: brew style (non-blocking — placeholders before the first real
+      # release will flag; kept visible, not gating).
+      - name: brew style (informational)
+        continue-on-error: true
+        run: |
+          if command -v brew >/dev/null 2>&1; then brew style Formula/clw.rb || true; fi
