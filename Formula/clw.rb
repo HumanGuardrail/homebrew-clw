@@ -4,30 +4,30 @@
 class Clw < Formula
   desc "CoreLink workspaces CLI"
   homepage "https://github.com/humangr-labs/clw-releases"
-  version "0.1.0"
+  version "0.1.1"
   # Closed-source: brew has no SPDX expression for this. tap CI gates on
   # `brew style` only (NOT `brew audit --strict`, which rejects this).
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.0/clw-0.1.0-aarch64-apple-darwin"
-      sha256 "deed2c81760d063b740760eb72c023da99cd2a7c72524fa9ec57e19737351c08"
+      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.1/clw-0.1.1-aarch64-apple-darwin"
+      sha256 "ee4a4f283f57ac283ffce820d47c90fea0e3a224e6bb03c9b99373ad78e66f60"
     end
     on_intel do
-      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.0/clw-0.1.0-x86_64-apple-darwin"
-      sha256 "dc6081e0e382a11ce143f6d76f9a281d34db0bd3cfd6b00fc6d8958a0f1ca21a"
+      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.1/clw-0.1.1-x86_64-apple-darwin"
+      sha256 "6d9ff8336023ab6bffa3f82dc5139eaa29effa0c1974857fc0cca16e44ff7aad"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.0/clw-0.1.0-aarch64-unknown-linux-gnu"
-      sha256 "c863f72188031e4dd1bbabe437e0259d8d1187e886febd5e2680e9b0bc2c596c"
+      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.1/clw-0.1.1-aarch64-unknown-linux-gnu"
+      sha256 "fdb46cb45dea9fd272fba7239d4d08c4886246b7ab77410fb7ff68066194704e"
     end
     on_intel do
-      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.0/clw-0.1.0-x86_64-unknown-linux-gnu"
-      sha256 "e6dac4487a33655d76d5745ca2cae0932f3d5c1ac294e8d42fceba02dcb09b84"
+      url "https://github.com/humangr-labs/clw-releases/releases/download/v0.1.1/clw-0.1.1-x86_64-unknown-linux-gnu"
+      sha256 "be8733781a1d19a96d88528df3fe67c9d50723e7bed95cb35d1e9ab712685610"
     end
   end
 
