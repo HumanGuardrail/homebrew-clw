@@ -4,30 +4,30 @@
 class Clw < Formula
   desc "CoreLink workspaces CLI"
   homepage "https://github.com/HumanGuardrail/clw-releases"
-  version "0.1.2"
+  version "0.1.3"
   # Closed-source: brew has no SPDX expression for this. tap CI gates on
   # `brew style` only (NOT `brew audit --strict`, which rejects this).
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.2/clw-0.1.2-aarch64-apple-darwin"
-      sha256 "2a0c65018ba1599f679f899791814448bfb9859e32d4f6275d4a14c345b2e5ac"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-aarch64-apple-darwin"
+      sha256 "033cd69b98aa69b0bf637dcae93d5be9e53e3feb7ed5645daee98485908c46a3"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.2/clw-0.1.2-x86_64-apple-darwin"
-      sha256 "5633c9c8627ae32cf333fec0b44ce5440647f0938c513384370ae53b89f3bbde"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-x86_64-apple-darwin"
+      sha256 "5ab96a59d81f97b4d69ab9d04917e325c1d9d282c68dc14c0deca36ddf8a5d3c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.2/clw-0.1.2-aarch64-unknown-linux-gnu"
-      sha256 "97ac50cd248664686e874a1bdf4af59e351bb504d60c35d0dacf8aa098d05eea"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-aarch64-unknown-linux-gnu"
+      sha256 "38f5dec829c537e3944f82ac8c1fa4c6b2f7aa130d2f691c5b11d104790c5fde"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.2/clw-0.1.2-x86_64-unknown-linux-gnu"
-      sha256 "3ca4c6aba5b868c6ca6535818ef3283c607ffa7b5f962a98fa499df9b87a52ca"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-x86_64-unknown-linux-gnu"
+      sha256 "9b7230d6fa6b6423fa79a93ea8b2f065e453fdc08ba42f7938413569baea00b1"
     end
   end
 
