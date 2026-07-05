@@ -4,30 +4,30 @@
 class Clw < Formula
   desc "CoreLink workspaces CLI"
   homepage "https://github.com/HumanGuardrail/clw-releases"
-  version "0.1.3"
+  version "0.1.4"
   # Closed-source: brew has no SPDX expression for this. tap CI gates on
   # `brew style` only (NOT `brew audit --strict`, which rejects this).
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-aarch64-apple-darwin"
-      sha256 "033cd69b98aa69b0bf637dcae93d5be9e53e3feb7ed5645daee98485908c46a3"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.4/clw-0.1.4-aarch64-apple-darwin"
+      sha256 "34eb51cb4f3e8b9ea5a153527bf96533f8b9e4b48001212409d17b9140e772b0"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-x86_64-apple-darwin"
-      sha256 "5ab96a59d81f97b4d69ab9d04917e325c1d9d282c68dc14c0deca36ddf8a5d3c"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.4/clw-0.1.4-x86_64-apple-darwin"
+      sha256 "68c9302d5b09b984db395d4d66ad07938417383fa71511aeabac708242444bef"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-aarch64-unknown-linux-gnu"
-      sha256 "38f5dec829c537e3944f82ac8c1fa4c6b2f7aa130d2f691c5b11d104790c5fde"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.4/clw-0.1.4-aarch64-unknown-linux-gnu"
+      sha256 "e136d7ad2d9e39defb2452a5b46b659823e6cddccc1b9944541eccb3ae0bdfde"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.3/clw-0.1.3-x86_64-unknown-linux-gnu"
-      sha256 "9b7230d6fa6b6423fa79a93ea8b2f065e453fdc08ba42f7938413569baea00b1"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.4/clw-0.1.4-x86_64-unknown-linux-gnu"
+      sha256 "9ec443d173c6088978cb73caf7b15983ac7161879b3c5663059fea7a4fdf5d8c"
     end
   end
 
