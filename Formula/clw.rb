@@ -4,30 +4,30 @@
 class Clw < Formula
   desc "CoreLink workspaces CLI"
   homepage "https://github.com/HumanGuardrail/clw-releases"
-  version "0.1.6"
+  version "0.1.7"
   # Closed-source: brew has no SPDX expression for this. tap CI gates on
   # `brew style` only (NOT `brew audit --strict`, which rejects this).
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-aarch64-apple-darwin"
-      sha256 "706f8907b4b2b5bc603e0e349bd5cc0f0b31152a1af67aa5a79a27cfa211824f"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-aarch64-apple-darwin"
+      sha256 "baeb058adf996f9d839794289d9cbf7be94ca634d989e2f1f8d1c133c69feb68"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-x86_64-apple-darwin"
-      sha256 "cf1d08886485812d145e55ecfb6f71a71ae3106355bf256e032b806f85c76090"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-x86_64-apple-darwin"
+      sha256 "91ad12c694a5da28e0dfad26001a0fc4b3a32b2a1ac1fb79538a949e45baab13"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-aarch64-unknown-linux-gnu"
-      sha256 "d4c3b21636be3cf10bcdb9a66191c7df28933909bff00e2b48d021f71758475f"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-aarch64-unknown-linux-gnu"
+      sha256 "a3fd14a81c35d560ddf86b8da2a822344ca4c3d42a430baf41333f0cf3fed760"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-x86_64-unknown-linux-gnu"
-      sha256 "e09a25572ff4db874874312b0565944e4d413f34a923f07005b1ede0bb0ab1ae"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-x86_64-unknown-linux-gnu"
+      sha256 "18c1aac3a3c17d045c5a0ffcef67855b4069ff4e8a35a2d5df9dc27ce99a0ca9"
     end
   end
 
