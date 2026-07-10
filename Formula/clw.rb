@@ -4,30 +4,30 @@
 class Clw < Formula
   desc "CoreLink workspaces CLI"
   homepage "https://github.com/HumanGuardrail/clw-releases"
-  version "0.1.5"
+  version "0.1.6"
   # Closed-source: brew has no SPDX expression for this. tap CI gates on
   # `brew style` only (NOT `brew audit --strict`, which rejects this).
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.5/clw-0.1.5-aarch64-apple-darwin"
-      sha256 "f84279703bacbbc965e99cfd6476cfc8af7bc517e830571ee6b16194906df310"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-aarch64-apple-darwin"
+      sha256 "706f8907b4b2b5bc603e0e349bd5cc0f0b31152a1af67aa5a79a27cfa211824f"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.5/clw-0.1.5-x86_64-apple-darwin"
-      sha256 "0184b6ffd0b6e4664ba2098edd1df77a4205049b2a1c7eaee3db1a8d96974636"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-x86_64-apple-darwin"
+      sha256 "cf1d08886485812d145e55ecfb6f71a71ae3106355bf256e032b806f85c76090"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.5/clw-0.1.5-aarch64-unknown-linux-gnu"
-      sha256 "9a9a7e27c775374111b2980092a10fe6ebb34abeb143fb7fd0375cceba1e54b8"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-aarch64-unknown-linux-gnu"
+      sha256 "d4c3b21636be3cf10bcdb9a66191c7df28933909bff00e2b48d021f71758475f"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.5/clw-0.1.5-x86_64-unknown-linux-gnu"
-      sha256 "95a05db35e4e5be50a104acb7c30466ff7ec5f7a154403943aca24279b5d8bf2"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.6/clw-0.1.6-x86_64-unknown-linux-gnu"
+      sha256 "e09a25572ff4db874874312b0565944e4d413f34a923f07005b1ede0bb0ab1ae"
     end
   end
 
