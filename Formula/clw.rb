@@ -4,30 +4,30 @@
 class Clw < Formula
   desc "CoreLink workspaces CLI"
   homepage "https://github.com/HumanGuardrail/clw-releases"
-  version "0.1.8"
+  version "0.1.9"
   # Closed-source: brew has no SPDX expression for this. tap CI gates on
   # `brew style` only (NOT `brew audit --strict`, which rejects this).
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-aarch64-apple-darwin"
-      sha256 "23f68754e5bb5004f0343aec1b687915446010a5615be421950efab8a8168400"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.9/clw-0.1.9-aarch64-apple-darwin"
+      sha256 "61a6578efb784bcebf27911c9ec60f7660f27bc36c64028e46873e9e632e6afe"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-x86_64-apple-darwin"
-      sha256 "b6c19d6e65c0daff34bf84ba44413d548704d7f89795ea8c365846930d45ff5d"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.9/clw-0.1.9-x86_64-apple-darwin"
+      sha256 "5f8b1dda7da0299fb735e53a4554cc36911d9284db4e9f465b562f0c169b0b6b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-aarch64-unknown-linux-gnu"
-      sha256 "1358c79ae555a7f637713b0a2103d929f564eb34ca14a5df0fba4d2c9c42d50b"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.9/clw-0.1.9-aarch64-unknown-linux-gnu"
+      sha256 "74710a17d8d590d1a73c0724e39b0f47fcf64983f18710039e5c0e15516af32e"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-x86_64-unknown-linux-gnu"
-      sha256 "2905bdf843cfb7f752730bb316c53eb5e713512198617734be0e8320a21b2967"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.9/clw-0.1.9-x86_64-unknown-linux-gnu"
+      sha256 "2cee5a23ee3d7ea0a3dc389eff8bfcf14c89fe84aca7eca69e59e425e4ee8991"
     end
   end
 
