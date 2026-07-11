@@ -4,30 +4,30 @@
 class Clw < Formula
   desc "CoreLink workspaces CLI"
   homepage "https://github.com/HumanGuardrail/clw-releases"
-  version "0.1.7"
+  version "0.1.8"
   # Closed-source: brew has no SPDX expression for this. tap CI gates on
   # `brew style` only (NOT `brew audit --strict`, which rejects this).
   license :cannot_represent
 
   on_macos do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-aarch64-apple-darwin"
-      sha256 "baeb058adf996f9d839794289d9cbf7be94ca634d989e2f1f8d1c133c69feb68"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-aarch64-apple-darwin"
+      sha256 "23f68754e5bb5004f0343aec1b687915446010a5615be421950efab8a8168400"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-x86_64-apple-darwin"
-      sha256 "91ad12c694a5da28e0dfad26001a0fc4b3a32b2a1ac1fb79538a949e45baab13"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-x86_64-apple-darwin"
+      sha256 "b6c19d6e65c0daff34bf84ba44413d548704d7f89795ea8c365846930d45ff5d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-aarch64-unknown-linux-gnu"
-      sha256 "a3fd14a81c35d560ddf86b8da2a822344ca4c3d42a430baf41333f0cf3fed760"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-aarch64-unknown-linux-gnu"
+      sha256 "1358c79ae555a7f637713b0a2103d929f564eb34ca14a5df0fba4d2c9c42d50b"
     end
     on_intel do
-      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.7/clw-0.1.7-x86_64-unknown-linux-gnu"
-      sha256 "18c1aac3a3c17d045c5a0ffcef67855b4069ff4e8a35a2d5df9dc27ce99a0ca9"
+      url "https://github.com/HumanGuardrail/clw-releases/releases/download/v0.1.8/clw-0.1.8-x86_64-unknown-linux-gnu"
+      sha256 "2905bdf843cfb7f752730bb316c53eb5e713512198617734be0e8320a21b2967"
     end
   end
 
